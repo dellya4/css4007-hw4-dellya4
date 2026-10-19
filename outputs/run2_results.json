@@ -1,0 +1,1073 @@
+[
+  {
+    "run": 2,
+    "question_id": "Q-01",
+    "question": "Which district has the higher population density in 2025, Ossbridge or Ossford, and by how many residents per square kilometre?",
+    "strategy": "S1",
+    "answer": "Ossbridge density = 52,904 ÷ 1,284.6 = 41.1857 residents/km²  \nOssford density = 30,982 ÷ 846.2 = 36.6140 residents/km²  \n\nOssbridge is higher by 4.5717 residents/km².\n\nANSWER: Ossbridge | 4.5717",
+    "expected_name": "Ossbridge",
+    "expected_value": 4.6,
+    "parsed_answer": {
+      "name": "Ossbridge",
+      "number": 4.5717
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2227,
+    "output_tokens": 80,
+    "seconds": 4.092425200000434
+  },
+  {
+    "run": 2,
+    "question_id": "Q-01",
+    "question": "Which district has the higher population density in 2025, Ossbridge or Ossford, and by how many residents per square kilometre?",
+    "strategy": "S2",
+    "answer": "ANSWER: Ossbridge | 4.5684",
+    "expected_name": "Ossbridge",
+    "expected_value": 4.6,
+    "parsed_answer": {
+      "name": "Ossbridge",
+      "number": 4.5684
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11180,
+    "output_tokens": 430,
+    "seconds": 19.22470649999923
+  },
+  {
+    "run": 2,
+    "question_id": "Q-01",
+    "question": "Which district has the higher population density in 2025, Ossbridge or Ossford, and by how many residents per square kilometre?",
+    "strategy": "S3",
+    "answer": "ANSWER: Ossbridge | 4.57",
+    "expected_name": "Ossbridge",
+    "expected_value": 4.6,
+    "parsed_answer": {
+      "name": "Ossbridge",
+      "number": 4.57
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3248,
+    "output_tokens": 197,
+    "seconds": 8.871055999999953
+  },
+  {
+    "run": 2,
+    "question_id": "Q-02",
+    "question": "Between the 2020 and 2025 censuses, which district grew faster in percentage terms, Tarnvale or Harrowfield, and by how many percentage points?",
+    "strategy": "S1",
+    "answer": "ANSWER: Tarnvale | 0.29",
+    "expected_name": "Harrowfield",
+    "expected_value": 1.69,
+    "parsed_answer": {
+      "name": "Tarnvale",
+      "number": 0.29
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2233,
+    "output_tokens": 12,
+    "seconds": 1.4322274000005564
+  },
+  {
+    "run": 2,
+    "question_id": "Q-02",
+    "question": "Between the 2020 and 2025 censuses, which district grew faster in percentage terms, Tarnvale or Harrowfield, and by how many percentage points?",
+    "strategy": "S2",
+    "answer": "ANSWER: Harrowfield | 1.69",
+    "expected_name": "Harrowfield",
+    "expected_value": 1.69,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 1.69
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11210,
+    "output_tokens": 273,
+    "seconds": 10.500179200000275
+  },
+  {
+    "run": 2,
+    "question_id": "Q-02",
+    "question": "Between the 2020 and 2025 censuses, which district grew faster in percentage terms, Tarnvale or Harrowfield, and by how many percentage points?",
+    "strategy": "S3",
+    "answer": "ANSWER: Harrowfield | 1.69",
+    "expected_name": "Harrowfield",
+    "expected_value": 1.69,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 1.69
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 4055,
+    "output_tokens": 277,
+    "seconds": 9.859422400000767
+  },
+  {
+    "run": 2,
+    "question_id": "Q-03",
+    "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+    "strategy": "S1",
+    "answer": "ANSWER: Lindenmoor | 0.0018",
+    "expected_name": "Lindenmoor",
+    "expected_value": 5.3,
+    "parsed_answer": {
+      "name": "Lindenmoor",
+      "number": 0.0018
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2233,
+    "output_tokens": 13,
+    "seconds": 1.3039408000004187
+  },
+  {
+    "run": 2,
+    "question_id": "Q-03",
+    "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+    "strategy": "S2",
+    "answer": "ANSWER: Lindenmoor | 0.89",
+    "expected_name": "Lindenmoor",
+    "expected_value": 5.3,
+    "parsed_answer": {
+      "name": "Lindenmoor",
+      "number": 0.89
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11210,
+    "output_tokens": 461,
+    "seconds": 610.7359363999985
+  },
+  {
+    "run": 2,
+    "question_id": "Q-03",
+    "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+    "strategy": "S3",
+    "answer": "Lindenmoor used more water, by 5.34 litres per resident per day.\n\nANSWER: Lindenmoor | 5.34",
+    "expected_name": "Lindenmoor",
+    "expected_value": 5.3,
+    "parsed_answer": {
+      "name": "Lindenmoor",
+      "number": 5.34
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3390,
+    "output_tokens": 229,
+    "seconds": 6.575953599998684
+  },
+  {
+    "run": 2,
+    "question_id": "Q-04",
+    "question": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?",
+    "strategy": "S1",
+    "answer": "ANSWER: Ashgrove | 38.0167",
+    "expected_name": "Millbrook",
+    "expected_value": 2.59,
+    "parsed_answer": {
+      "name": "Ashgrove",
+      "number": 38.0167
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2228,
+    "output_tokens": 14,
+    "seconds": 1.5123796000007133
+  },
+  {
+    "run": 2,
+    "question_id": "Q-04",
+    "question": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?",
+    "strategy": "S2",
+    "answer": "ANSWER: Millbrook | 2.5916666667",
+    "expected_name": "Millbrook",
+    "expected_value": 2.59,
+    "parsed_answer": {
+      "name": "Millbrook",
+      "number": 2.5916666667
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11185,
+    "output_tokens": 407,
+    "seconds": 8.837567599999602
+  },
+  {
+    "run": 2,
+    "question_id": "Q-04",
+    "question": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?",
+    "strategy": "S3",
+    "answer": "Millbrook has more pupils per school by 2.59.\n\nANSWER: Millbrook | 2.59",
+    "expected_name": "Millbrook",
+    "expected_value": 2.59,
+    "parsed_answer": {
+      "name": "Millbrook",
+      "number": 2.59
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3232,
+    "output_tokens": 202,
+    "seconds": 6.177696999999171
+  },
+  {
+    "run": 2,
+    "question_id": "Q-05",
+    "question": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?",
+    "strategy": "S1",
+    "answer": "ANSWER: Stonecairn | 117.8008573",
+    "expected_name": "Coldharbour",
+    "expected_value": 14235,
+    "parsed_answer": {
+      "name": "Stonecairn",
+      "number": 117.8008573
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2229,
+    "output_tokens": 16,
+    "seconds": 1.6727874000007432
+  },
+  {
+    "run": 2,
+    "question_id": "Q-05",
+    "question": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?",
+    "strategy": "S2",
+    "answer": "ANSWER: Coldharbour | 14341.442",
+    "expected_name": "Coldharbour",
+    "expected_value": 14235,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 14341.442
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11190,
+    "output_tokens": 512,
+    "seconds": 11.982887500000288
+  },
+  {
+    "run": 2,
+    "question_id": "Q-05",
+    "question": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?",
+    "strategy": "S3",
+    "answer": "ANSWER: Coldharbour | 14235.31",
+    "expected_name": "Coldharbour",
+    "expected_value": 14235,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 14235.31
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3277,
+    "output_tokens": 223,
+    "seconds": 9.991283700001077
+  },
+  {
+    "run": 2,
+    "question_id": "Q-06",
+    "question": "Is the combined 2025 population of Redfen and Kelmarsh larger than the 2025 population of Ossford, and by how many residents do they differ?",
+    "strategy": "S1",
+    "answer": "ANSWER: yes | 24117",
+    "expected_name": "yes",
+    "expected_value": 14069,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 24117.0
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2233,
+    "output_tokens": 10,
+    "seconds": 1.5180802999984735
+  },
+  {
+    "run": 2,
+    "question_id": "Q-06",
+    "question": "Is the combined 2025 population of Redfen and Kelmarsh larger than the 2025 population of Ossford, and by how many residents do they differ?",
+    "strategy": "S2",
+    "answer": "ANSWER: yes | 14069",
+    "expected_name": "yes",
+    "expected_value": 14069,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 14069.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11210,
+    "output_tokens": 311,
+    "seconds": 11.079277599999841
+  },
+  {
+    "run": 2,
+    "question_id": "Q-06",
+    "question": "Is the combined 2025 population of Redfen and Kelmarsh larger than the 2025 population of Ossford, and by how many residents do they differ?",
+    "strategy": "S3",
+    "answer": "ANSWER: Yes | 14069",
+    "expected_name": "yes",
+    "expected_value": 14069,
+    "parsed_answer": {
+      "name": "Yes",
+      "number": 14069.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2088,
+    "output_tokens": 110,
+    "seconds": 5.962239299999055
+  },
+  {
+    "run": 2,
+    "question_id": "Q-07",
+    "question": "Which district has more paved road per 1,000 residents in 2025, Coldharbour or Stonecairn, and by how many km per 1,000 residents?",
+    "strategy": "S1",
+    "answer": "ANSWER: Coldharbour | 19.7561",
+    "expected_name": "Coldharbour",
+    "expected_value": 18.5,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 19.7561
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2237,
+    "output_tokens": 14,
+    "seconds": 2.537320199999158
+  },
+  {
+    "run": 2,
+    "question_id": "Q-07",
+    "question": "Which district has more paved road per 1,000 residents in 2025, Coldharbour or Stonecairn, and by how many km per 1,000 residents?",
+    "strategy": "S2",
+    "answer": "ANSWER: Coldharbour | 18.5074",
+    "expected_name": "Coldharbour",
+    "expected_value": 18.5,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 18.5074
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11230,
+    "output_tokens": 367,
+    "seconds": 15.895048799999131
+  },
+  {
+    "run": 2,
+    "question_id": "Q-07",
+    "question": "Which district has more paved road per 1,000 residents in 2025, Coldharbour or Stonecairn, and by how many km per 1,000 residents?",
+    "strategy": "S3",
+    "answer": "Coldharbour has more paved road per 1,000 residents, by 18.50 km per 1,000 residents.\n\nANSWER: Coldharbour | 18.50",
+    "expected_name": "Coldharbour",
+    "expected_value": 18.5,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 18.5
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3297,
+    "output_tokens": 241,
+    "seconds": 6.909548100000393
+  },
+  {
+    "run": 2,
+    "question_id": "Q-08",
+    "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+    "strategy": "S1",
+    "answer": "ANSWER: Brightwater | 72.3495",
+    "expected_name": "Brightwater",
+    "expected_value": 72.46,
+    "parsed_answer": {
+      "name": "Brightwater",
+      "number": 72.3495
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2235,
+    "output_tokens": 13,
+    "seconds": 1.6418380999984947
+  },
+  {
+    "run": 2,
+    "question_id": "Q-08",
+    "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+    "strategy": "S2",
+    "answer": "ANSWER: Brightwater | 72.45615",
+    "expected_name": "Brightwater",
+    "expected_value": 72.46,
+    "parsed_answer": {
+      "name": "Brightwater",
+      "number": 72.45615
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11220,
+    "output_tokens": 486,
+    "seconds": 10.989657799998895
+  },
+  {
+    "run": 2,
+    "question_id": "Q-08",
+    "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+    "strategy": "S3",
+    "answer": "",
+    "expected_name": "Brightwater",
+    "expected_value": 72.46,
+    "parsed_answer": null,
+    "correct": false,
+    "unanswered": true,
+    "input_tokens": 12934,
+    "output_tokens": 619,
+    "seconds": 19.98818669999855
+  },
+  {
+    "run": 2,
+    "question_id": "Q-09",
+    "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+    "strategy": "S1",
+    "answer": "ANSWER: Brightwater | 0.5148",
+    "expected_name": "Millbrook",
+    "expected_value": 0.6,
+    "parsed_answer": {
+      "name": "Brightwater",
+      "number": 0.5148
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2227,
+    "output_tokens": 13,
+    "seconds": 4.3946474000003946
+  },
+  {
+    "run": 2,
+    "question_id": "Q-09",
+    "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+    "strategy": "S2",
+    "answer": "ANSWER: Brightwater | 1.37",
+    "expected_name": "Millbrook",
+    "expected_value": 0.6,
+    "parsed_answer": {
+      "name": "Brightwater",
+      "number": 1.37
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11180,
+    "output_tokens": 325,
+    "seconds": 12.00208130000101
+  },
+  {
+    "run": 2,
+    "question_id": "Q-09",
+    "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+    "strategy": "S3",
+    "answer": "Millbrook has the higher population density by 0.556 residents per square kilometre.\n\nANSWER: Millbrook | 0.556",
+    "expected_name": "Millbrook",
+    "expected_value": 0.6,
+    "parsed_answer": {
+      "name": "Millbrook",
+      "number": 0.556
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3435,
+    "output_tokens": 209,
+    "seconds": 7.637440599999536
+  },
+  {
+    "run": 2,
+    "question_id": "Q-10",
+    "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+    "strategy": "S1",
+    "answer": "ANSWER: Stonecairn | 8",
+    "expected_name": "Stonecairn",
+    "expected_value": 8,
+    "parsed_answer": {
+      "name": "Stonecairn",
+      "number": 8.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2224,
+    "output_tokens": 12,
+    "seconds": 1.0285573999972257
+  },
+  {
+    "run": 2,
+    "question_id": "Q-10",
+    "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+    "strategy": "S2",
+    "answer": "ANSWER: Stonecairn | 8",
+    "expected_name": "Stonecairn",
+    "expected_value": 8,
+    "parsed_answer": {
+      "name": "Stonecairn",
+      "number": 8.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11165,
+    "output_tokens": 147,
+    "seconds": 6.793368299997383
+  },
+  {
+    "run": 2,
+    "question_id": "Q-10",
+    "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+    "strategy": "S3",
+    "answer": "ANSWER: Stonecairn | 8",
+    "expected_name": "Stonecairn",
+    "expected_value": 8,
+    "parsed_answer": {
+      "name": "Stonecairn",
+      "number": 8.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2629,
+    "output_tokens": 159,
+    "seconds": 5.937266900000395
+  },
+  {
+    "run": 2,
+    "question_id": "Q-11",
+    "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+    "strategy": "S1",
+    "answer": "Redfen: 3147 ÷ 10 = 314.7 pupils per school  \nAshgrove: 8837 ÷ 24 = 368.208333... pupils per school  \nMillbrook: 5562 ÷ 15 = 370.8 pupils per school  \n\nDifference: 370.8 − 314.7 = 56.1\n\nANSWER: Redfen | 56.1",
+    "expected_name": "Redfen",
+    "expected_value": 56.1,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 56.1
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2242,
+    "output_tokens": 89,
+    "seconds": 2.6644545999988622
+  },
+  {
+    "run": 2,
+    "question_id": "Q-11",
+    "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+    "strategy": "S2",
+    "answer": "ANSWER: Redfen | 53.5083",
+    "expected_name": "Redfen",
+    "expected_value": 56.1,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 53.5083
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11255,
+    "output_tokens": 357,
+    "seconds": 13.537202899999102
+  },
+  {
+    "run": 2,
+    "question_id": "Q-11",
+    "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+    "strategy": "S3",
+    "answer": "Redfen has the fewest pupils per school. The difference between the highest and lowest is 56.1 pupils per school.\n\nANSWER: Redfen | 56.1",
+    "expected_name": "Redfen",
+    "expected_value": 56.1,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 56.1
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3808,
+    "output_tokens": 266,
+    "seconds": 6.66731129999971
+  },
+  {
+    "run": 2,
+    "question_id": "Q-12",
+    "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+    "strategy": "S1",
+    "answer": "ANSWER: Harrowfield | 0.9482791955",
+    "expected_name": "Tarnvale",
+    "expected_value": 64.4,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 0.9482791955
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2230,
+    "output_tokens": 16,
+    "seconds": 1.367822199998045
+  },
+  {
+    "run": 2,
+    "question_id": "Q-12",
+    "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+    "strategy": "S2",
+    "answer": "ANSWER: Harrowfield | 1153.83",
+    "expected_name": "Tarnvale",
+    "expected_value": 64.4,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 1153.83
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11195,
+    "output_tokens": 202,
+    "seconds": 9.161840000000666
+  },
+  {
+    "run": 2,
+    "question_id": "Q-12",
+    "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+    "strategy": "S3",
+    "answer": "Tarnvale, by 64.392 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.392",
+    "expected_name": "Tarnvale",
+    "expected_value": 64.4,
+    "parsed_answer": {
+      "name": "Tarnvale",
+      "number": 64.392
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2194,
+    "output_tokens": 191,
+    "seconds": 5.4706686999998055
+  },
+  {
+    "run": 2,
+    "question_id": "Q-13",
+    "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+    "strategy": "S1",
+    "answer": "ANSWER: Stonecairn | 3.535213215%",
+    "expected_name": "Coldharbour",
+    "expected_value": 4.16,
+    "parsed_answer": {
+      "name": "Stonecairn",
+      "number": 3.535213215
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2238,
+    "output_tokens": 17,
+    "seconds": 2.124673800000892
+  },
+  {
+    "run": 2,
+    "question_id": "Q-13",
+    "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+    "strategy": "S2",
+    "answer": "ANSWER: Coldharbour | 4.16",
+    "expected_name": "Coldharbour",
+    "expected_value": 4.16,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 4.16
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11235,
+    "output_tokens": 377,
+    "seconds": 11.804368699999031
+  },
+  {
+    "run": 2,
+    "question_id": "Q-13",
+    "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+    "strategy": "S3",
+    "answer": "ANSWER: Coldharbour | 4.16%",
+    "expected_name": "Coldharbour",
+    "expected_value": 4.16,
+    "parsed_answer": {
+      "name": "Coldharbour",
+      "number": 4.16
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2201,
+    "output_tokens": 179,
+    "seconds": 4.920124000000214
+  },
+  {
+    "run": 2,
+    "question_id": "Q-14",
+    "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+    "strategy": "S1",
+    "answer": "ANSWER: Tarnvale | 0.00378469259311221",
+    "expected_name": "Ashgrove",
+    "expected_value": 4.9,
+    "parsed_answer": {
+      "name": "Tarnvale",
+      "number": 0.00378469259311221
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2233,
+    "output_tokens": 17,
+    "seconds": 1.4345142999991367
+  },
+  {
+    "run": 2,
+    "question_id": "Q-14",
+    "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+    "strategy": "S2",
+    "answer": "ANSWER: Ashgrove | 0.0048",
+    "expected_name": "Ashgrove",
+    "expected_value": 4.9,
+    "parsed_answer": {
+      "name": "Ashgrove",
+      "number": 0.0048
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11210,
+    "output_tokens": 550,
+    "seconds": 12.830613099999027
+  },
+  {
+    "run": 2,
+    "question_id": "Q-14",
+    "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+    "strategy": "S3",
+    "answer": "Ashgrove | 4.85276149735728",
+    "expected_name": "Ashgrove",
+    "expected_value": 4.9,
+    "parsed_answer": null,
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2231,
+    "output_tokens": 179,
+    "seconds": 6.23342269999921
+  },
+  {
+    "run": 2,
+    "question_id": "Q-15",
+    "question": "Which district has more pupils per school in 2025/26, Kelmarsh or Redfen, and by how many pupils per school?",
+    "strategy": "S1",
+    "answer": "ANSWER: Kelmarsh | 0.2444444444",
+    "expected_name": "Redfen",
+    "expected_value": 17.61,
+    "parsed_answer": {
+      "name": "Kelmarsh",
+      "number": 0.2444444444
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2228,
+    "output_tokens": 16,
+    "seconds": 1.7143886000012571
+  },
+  {
+    "run": 2,
+    "question_id": "Q-15",
+    "question": "Which district has more pupils per school in 2025/26, Kelmarsh or Redfen, and by how many pupils per school?",
+    "strategy": "S2",
+    "answer": "ANSWER: Redfen | 17.609091",
+    "expected_name": "Redfen",
+    "expected_value": 17.61,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 17.609091
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11185,
+    "output_tokens": 359,
+    "seconds": 11.234018299997842
+  },
+  {
+    "run": 2,
+    "question_id": "Q-15",
+    "question": "Which district has more pupils per school in 2025/26, Kelmarsh or Redfen, and by how many pupils per school?",
+    "strategy": "S3",
+    "answer": "ANSWER: Redfen | 17.61",
+    "expected_name": "Redfen",
+    "expected_value": 17.61,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 17.61
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 4112,
+    "output_tokens": 176,
+    "seconds": 9.129688500001066
+  },
+  {
+    "run": 2,
+    "question_id": "Q-16",
+    "question": "Is the combined area of Ossbridge and Ossford larger than the area of Tarnvale, and by how many square kilometres do they differ?",
+    "strategy": "S1",
+    "answer": "ANSWER: yes | 23.9",
+    "expected_name": "yes",
+    "expected_value": 23.9,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 23.9
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2227,
+    "output_tokens": 11,
+    "seconds": 1.3143827999992936
+  },
+  {
+    "run": 2,
+    "question_id": "Q-16",
+    "question": "Is the combined area of Ossbridge and Ossford larger than the area of Tarnvale, and by how many square kilometres do they differ?",
+    "strategy": "S2",
+    "answer": "ANSWER: yes | 23.9",
+    "expected_name": "yes",
+    "expected_value": 23.9,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 23.9
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11180,
+    "output_tokens": 233,
+    "seconds": 8.142612700001337
+  },
+  {
+    "run": 2,
+    "question_id": "Q-16",
+    "question": "Is the combined area of Ossbridge and Ossford larger than the area of Tarnvale, and by how many square kilometres do they differ?",
+    "strategy": "S3",
+    "answer": "ANSWER: yes | 23.9",
+    "expected_name": "yes",
+    "expected_value": 23.9,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 23.9
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 1948,
+    "output_tokens": 117,
+    "seconds": 4.205098599999474
+  },
+  {
+    "run": 2,
+    "question_id": "Q-17",
+    "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+    "strategy": "S1",
+    "answer": "ANSWER: Harrowfield | 29.5322184383",
+    "expected_name": "Harrowfield",
+    "expected_value": 884,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 29.5322184383
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2239,
+    "output_tokens": 16,
+    "seconds": 1.4105378999993263
+  },
+  {
+    "run": 2,
+    "question_id": "Q-17",
+    "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+    "strategy": "S2",
+    "answer": "ANSWER: Harrowfield | 58.7987025556",
+    "expected_name": "Harrowfield",
+    "expected_value": 884,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 58.7987025556
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11240,
+    "output_tokens": 412,
+    "seconds": 613.8162244000014
+  },
+  {
+    "run": 2,
+    "question_id": "Q-17",
+    "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+    "strategy": "S3",
+    "answer": "",
+    "expected_name": "Harrowfield",
+    "expected_value": 884,
+    "parsed_answer": null,
+    "correct": false,
+    "unanswered": true,
+    "input_tokens": 10918,
+    "output_tokens": 500,
+    "seconds": 15.069713299999421
+  },
+  {
+    "run": 2,
+    "question_id": "Q-18",
+    "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+    "strategy": "S1",
+    "answer": "ANSWER: yes | 39999.28490546545",
+    "expected_name": "yes",
+    "expected_value": 40013,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 39999.28490546545
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2250,
+    "output_tokens": 15,
+    "seconds": 1.390352399997937
+  },
+  {
+    "run": 2,
+    "question_id": "Q-18",
+    "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+    "strategy": "S2",
+    "answer": "ANSWER: yes | 40013",
+    "expected_name": "yes",
+    "expected_value": 40013,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 40013.0
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11295,
+    "output_tokens": 506,
+    "seconds": 12.164081399998395
+  },
+  {
+    "run": 2,
+    "question_id": "Q-18",
+    "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+    "strategy": "S3",
+    "answer": "ANSWER: yes | 40013.39",
+    "expected_name": "yes",
+    "expected_value": 40013,
+    "parsed_answer": {
+      "name": "yes",
+      "number": 40013.39
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2543,
+    "output_tokens": 128,
+    "seconds": 5.705909199998132
+  },
+  {
+    "run": 2,
+    "question_id": "Q-19",
+    "question": "Which district has the denser paved road network, Lindenmoor or Redfen, and by how many km of road per square kilometre?",
+    "strategy": "S1",
+    "answer": "Redfen has the denser paved road network. Density difference: 244.6/677.1 − 402.3/1,015.7 = 0.033566… km/km².\n\nANSWER: Redfen | 0.0336",
+    "expected_name": "Lindenmoor",
+    "expected_value": 0.035,
+    "parsed_answer": {
+      "name": "Redfen",
+      "number": 0.0336
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2227,
+    "output_tokens": 56,
+    "seconds": 1.5373249000003852
+  },
+  {
+    "run": 2,
+    "question_id": "Q-19",
+    "question": "Which district has the denser paved road network, Lindenmoor or Redfen, and by how many km of road per square kilometre?",
+    "strategy": "S2",
+    "answer": "ANSWER: Lindenmoor | 0.0348",
+    "expected_name": "Lindenmoor",
+    "expected_value": 0.035,
+    "parsed_answer": {
+      "name": "Lindenmoor",
+      "number": 0.0348
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 11180,
+    "output_tokens": 292,
+    "seconds": 8.80918390000079
+  },
+  {
+    "run": 2,
+    "question_id": "Q-19",
+    "question": "Which district has the denser paved road network, Lindenmoor or Redfen, and by how many km of road per square kilometre?",
+    "strategy": "S3",
+    "answer": "ANSWER: Lindenmoor | 0.0348350277",
+    "expected_name": "Lindenmoor",
+    "expected_value": 0.035,
+    "parsed_answer": {
+      "name": "Lindenmoor",
+      "number": 0.0348350277
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 3169,
+    "output_tokens": 205,
+    "seconds": 6.698690100001841
+  },
+  {
+    "run": 2,
+    "question_id": "Q-20",
+    "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+    "strategy": "S1",
+    "answer": "ANSWER: Harrowfield | 80,010.07034518687",
+    "expected_name": "Ashgrove",
+    "expected_value": 2993,
+    "parsed_answer": {
+      "name": "Harrowfield",
+      "number": 80010.07034518688
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 2240,
+    "output_tokens": 18,
+    "seconds": 1.5274559999998019
+  },
+  {
+    "run": 2,
+    "question_id": "Q-20",
+    "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+    "strategy": "S2",
+    "answer": "ANSWER: Ashgrove | 3000.49",
+    "expected_name": "Ashgrove",
+    "expected_value": 2993,
+    "parsed_answer": {
+      "name": "Ashgrove",
+      "number": 3000.49
+    },
+    "correct": false,
+    "unanswered": false,
+    "input_tokens": 11245,
+    "output_tokens": 595,
+    "seconds": 12.167080400002305
+  },
+  {
+    "run": 2,
+    "question_id": "Q-20",
+    "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+    "strategy": "S3",
+    "answer": "ANSWER: Ashgrove | 2993.34283596979",
+    "expected_name": "Ashgrove",
+    "expected_value": 2993,
+    "parsed_answer": {
+      "name": "Ashgrove",
+      "number": 2993.34283596979
+    },
+    "correct": true,
+    "unanswered": false,
+    "input_tokens": 2689,
+    "output_tokens": 244,
+    "seconds": 5.236898099999962
+  }
+]

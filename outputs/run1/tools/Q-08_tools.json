@@ -1,0 +1,295 @@
+{
+  "question_id": "Q-08",
+  "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_gUJVdLl8U9tMwK0yD991Mo7m",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "population"
+          },
+          "result": {
+            "district": "Brightwater",
+            "field": "population",
+            "matches": [
+              {
+                "text": "Census population: 39,902 in 2020 and 44,675 in 2025. Households used 3,315 megalitres of water during 2025, and the district's 2025 budget amounted to 7,733.9 million tenge",
+                "source": "NR-05"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00011730000005627517
+        },
+        {
+          "tool_call_id": "call_V8okA0jfzNaFfr5yT9aFJwEP",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Brightwater",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Brightwater has 17 schools, which enrolled 6,241 pupils for the 2025/26 school year",
+                "source": "NR-05"
+              },
+              {
+                "text": "Census population: 39,902 in 2020 and 44,675 in 2025. Households used 3,315 megalitres of water during 2025, and the district's 2025 budget amounted to 7,733.9 million tenge",
+                "source": "NR-05"
+              }
+            ],
+            "corrections": [
+              {
+                "text": "Correction: the 2025 Brightwater district profile gives the district's area as 912.4 square kilometres. This is a transposition error. The correct area is 921.4 square kilometres. All other figures in that profile are correct.",
+                "source": "NR-16"
+              }
+            ]
+          },
+          "seconds": 7.949999962875154e-05
+        },
+        {
+          "tool_call_id": "call_6sLD3opieFFsh6eH6ow4iXxK",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "population"
+          },
+          "result": {
+            "district": "Millbrook",
+            "field": "population",
+            "matches": [
+              {
+                "text": "Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of water during 2025, and the district's 2025 budget amounted to 6,305.7 million tenge",
+                "source": "NR-11"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.579999990208307e-05
+        },
+        {
+          "tool_call_id": "call_JnvrbJfTe8CR8GvTRG9zYY3s",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Millbrook",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of water during 2025, and the district's 2025 budget amounted to 6,305.7 million tenge",
+                "source": "NR-11"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.340000027194037e-05
+        },
+        {
+          "tool_call_id": "call_iuEyMg79voEQ7wCzb7rKeuGL",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "2025 household water tariff"
+          },
+          "result": {
+            "error": "field '2025 household water tariff' not found for 'Brightwater'"
+          },
+          "seconds": 6.200000007083872e-05
+        },
+        {
+          "tool_call_id": "call_UArUPzsq6zojCy2leOxoSSVy",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "2025 household water tariff"
+          },
+          "result": {
+            "error": "field '2025 household water tariff' not found for 'Millbrook'"
+          },
+          "seconds": 5.63000003239722e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_lqXzF7NTYSkQWkKYNDMGqczE",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "tariff"
+          },
+          "result": {
+            "error": "field 'tariff' not found for 'Brightwater'"
+          },
+          "seconds": 9.689999978945707e-05
+        },
+        {
+          "tool_call_id": "call_ZPWBa2AAUWRPdjTQuwTf3Rzf",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "tariff"
+          },
+          "result": {
+            "error": "field 'tariff' not found for 'Millbrook'"
+          },
+          "seconds": 6.280000025071786e-05
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_mHwNkxbzaf94HVdD30hjQqwR",
+          "name": "lookup",
+          "arguments": {
+            "district": "Nine Rivers Region",
+            "field": "water tariff"
+          },
+          "result": {
+            "error": "district 'Nine Rivers Region' not found"
+          },
+          "seconds": 5.710000004910398e-05
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_NCvIKO6o0dslTmmwpVqt46uL",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "water price"
+          },
+          "result": {
+            "error": "field 'water price' not found for 'Brightwater'"
+          },
+          "seconds": 9.879999970507924e-05
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_hyhLY2G21ZmaXtGNDNgHwEeq",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "budget"
+          },
+          "result": {
+            "district": "Millbrook",
+            "field": "budget",
+            "matches": [
+              {
+                "text": "Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of water during 2025, and the district's 2025 budget amounted to 6,305.7 million tenge",
+                "source": "NR-11"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00010849999989659409
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_DcAyQFhx79Gmac5PEfnqzYtr",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "household water tariff 2025"
+          },
+          "result": {
+            "error": "field 'household water tariff 2025' not found for 'Brightwater'"
+          },
+          "seconds": 9.890000001178123e-05
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_m0yaWFlt7mGRJbey7RH8QniL",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "households"
+          },
+          "result": {
+            "district": "Millbrook",
+            "field": "households",
+            "matches": [
+              {
+                "text": "Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of water during 2025, and the district's 2025 budget amounted to 6,305.7 million tenge",
+                "source": "NR-11"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00010449999990669312
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_e2MKoOsaypOfkzybJ8B0yHG2",
+          "name": "lookup",
+          "arguments": {
+            "district": "Brightwater",
+            "field": "2025"
+          },
+          "result": {
+            "district": "Brightwater",
+            "field": "2025",
+            "matches": [
+              {
+                "text": "Brightwater has 17 schools, which enrolled 6,241 pupils for the 2025/26 school year",
+                "source": "NR-05"
+              },
+              {
+                "text": "Census population: 39,902 in 2020 and 44,675 in 2025. Households used 3,315 megalitres of water during 2025, and the district's 2025 budget amounted to 7,733.9 million tenge",
+                "source": "NR-05"
+              }
+            ],
+            "corrections": [
+              {
+                "text": "Correction: the 2025 Brightwater district profile gives the district's area as 912.4 square kilometres. This is a transposition error. The correct area is 921.4 square kilometres. All other figures in that profile are correct.",
+                "source": "NR-16"
+              }
+            ]
+          },
+          "seconds": 0.00011189999986527255
+        }
+      ]
+    }
+  ],
+  "input_tokens": 9903,
+  "output_tokens": 331,
+  "unanswered": true,
+  "answer": "",
+  "rounds_used": 8,
+  "total_seconds": 11.481608999999935
+}

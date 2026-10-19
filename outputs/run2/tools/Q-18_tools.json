@@ -1,0 +1,87 @@
+{
+  "question_id": "Q-18",
+  "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_40vMjdj2NkO0gjnY4orJUiiM",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "population"
+          },
+          "result": {
+            "district": "Millbrook",
+            "field": "population",
+            "matches": [
+              {
+                "text": "Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of water during 2025, and the district's 2025 budget amounted to 6,305.7 million tenge",
+                "source": "NR-11"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00010759999713627622
+        },
+        {
+          "tool_call_id": "call_hHl5QZD2wiU01FZPOvoT5b8S",
+          "name": "lookup",
+          "arguments": {
+            "district": "Millbrook",
+            "field": "population growth 2020 to 2025"
+          },
+          "result": {
+            "error": "field 'population growth 2020 to 2025' not found for 'Millbrook'"
+          },
+          "seconds": 6.529999882332049e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_YJEUyZJwJKGHyrqaIMKERG1H",
+          "name": "calculate",
+          "arguments": {
+            "expression": "(37203-34590)/34590"
+          },
+          "result": {
+            "result": 0.07554206418039897
+          },
+          "seconds": 0.00033030000122380443
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_jZjfJpxkF1N1837nY42idC89",
+          "name": "calculate",
+          "arguments": {
+            "expression": "37203*(1+0.07554206418039897)"
+          },
+          "result": {
+            "result": 40013.391413703386
+          },
+          "seconds": 0.0001145999995060265
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "tool_calls": [],
+      "final_answer": "ANSWER: yes | 40013.39"
+    }
+  ],
+  "input_tokens": 2543,
+  "output_tokens": 128,
+  "unanswered": false,
+  "answer": "ANSWER: yes | 40013.39",
+  "rounds_used": 4,
+  "total_seconds": 5.705909199998132
+}

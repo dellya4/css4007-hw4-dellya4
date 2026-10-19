@@ -1,0 +1,413 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_p3TbfYVMycUh4tnQhH2xwsVH",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 7,146 megalitres",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00024950000079115853
+        },
+        {
+          "tool_call_id": "call_GwA4OtOaGjuISc3yyL717Twj",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "population"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "population",
+            "matches": [
+              {
+                "text": "There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 residents; the 2020 census had recorded 83,609. The district's paved road network is 1,037.2 km long",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00012259999857633375
+        },
+        {
+          "tool_call_id": "call_axJeHoR1nJRgtMuKvmgaKql0",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 3,862 megalitres",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 7.94000006862916e-05
+        },
+        {
+          "tool_call_id": "call_51sZiwspRMvB7qQp0hehKQc7",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "population"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "population",
+            "matches": [
+              {
+                "text": "There are 21 schools in the district, attended by 7,413 pupils in 2025/26. The 2025 census recorded 52,904 residents; the 2020 census had recorded 48,317. The district's paved road network is 612.4 km long",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.360000043059699e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_GGpwl5IjafozHdSMWZ8T5e8E",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "2025 household water tariff"
+          },
+          "result": {
+            "error": "field '2025 household water tariff' not found for 'Harrowfield'"
+          },
+          "seconds": 9.819999831961468e-05
+        },
+        {
+          "tool_call_id": "call_7HxQjLu0fUMXXeS0IhVGYNNe",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "2025 household water tariff"
+          },
+          "result": {
+            "error": "field '2025 household water tariff' not found for 'Ossbridge'"
+          },
+          "seconds": 6.750000102329068e-05
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_xVakPDYvQR3K6rmSIUgidf7L",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "water tariff"
+          },
+          "result": {
+            "error": "field 'water tariff' not found for 'Harrowfield'"
+          },
+          "seconds": 9.970000246539712e-05
+        },
+        {
+          "tool_call_id": "call_aMFLH1bpcoc4y800CwvKBe43",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "water tariff"
+          },
+          "result": {
+            "error": "field 'water tariff' not found for 'Ossbridge'"
+          },
+          "seconds": 9.500000305706635e-05
+        },
+        {
+          "tool_call_id": "call_cIPtxbWCkvAEmsVhfasItQCu",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "budget"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "budget",
+            "matches": [
+              {
+                "text": "Its budget for 2025 was set at 16,021.7 million tenge",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 7.510000068577938e-05
+        },
+        {
+          "tool_call_id": "call_NxGm8qpw6nwxQ7CKVdCpWdsS",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "budget"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "budget",
+            "matches": [
+              {
+                "text": "Its budget for 2025 was set at 9,284.5 million tenge",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.22000006842427e-05
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_4dgh5ehKx3dyQrJKWyOaC4Iv",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "water"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "water",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 7,146 megalitres",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 4.360000093583949e-05
+        },
+        {
+          "tool_call_id": "call_Czaa3XIAwGygNnr3EyDYxHfp",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "water"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "water",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 3,862 megalitres",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 5.319999763742089e-05
+        },
+        {
+          "tool_call_id": "call_MVUmt0RXwRnaA39mruvPRRzK",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "household"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "household",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 7,146 megalitres",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 2.5600002118153498e-05
+        },
+        {
+          "tool_call_id": "call_C9y9wletG0m1a0Lrj1eEaaQy",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "household"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "household",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 3,862 megalitres",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 4.73000000056345e-05
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_d0aZa4aUjpuVpkd5mcSTP28v",
+          "name": "lookup",
+          "arguments": {
+            "district": "Nine Rivers",
+            "field": "water tariff"
+          },
+          "result": {
+            "error": "district 'Nine Rivers' not found"
+          },
+          "seconds": 0.00011019999874406494
+        },
+        {
+          "tool_call_id": "call_yHgLIwjQhdzV95ZrQxyMKG8G",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "area"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "area",
+            "matches": [
+              {
+                "text": "Founded in 1862 on the Harrow, Harrowfield covers 1,388.5 square kilometres",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.0001053000014508143
+        },
+        {
+          "tool_call_id": "call_qZSYjp2h3901SFjNzCLculYy",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "area"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "area",
+            "matches": [
+              {
+                "text": "Founded in 1871 on the Oss, Ossbridge covers 1,284.6 square kilometres",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 7.060000280034728e-05
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_XxQIRzvLuLFOlLF61GfYvjmj",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "pupils"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "pupils",
+            "matches": [
+              {
+                "text": "There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 residents; the 2020 census had recorded 83,609. The district's paved road network is 1,037.2 km long",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00013069999840809032
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_wZ6a6HPw2aqvNmeNssbxOFu3",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ossbridge",
+            "field": "roads"
+          },
+          "result": {
+            "district": "Ossbridge",
+            "field": "roads",
+            "matches": [
+              {
+                "text": "There are 21 schools in the district, attended by 7,413 pupils in 2025/26. The 2025 census recorded 52,904 residents; the 2020 census had recorded 48,317. The district's paved road network is 612.4 km long",
+                "source": "NR-01"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.000198199999431381
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_eoxx2gbV9BfDtaWScU2A1kTi",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "roads"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "roads",
+            "matches": [
+              {
+                "text": "There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 residents; the 2020 census had recorded 83,609. The district's paved road network is 1,037.2 km long",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.000112599998828955
+        }
+      ]
+    }
+  ],
+  "input_tokens": 10918,
+  "output_tokens": 500,
+  "unanswered": true,
+  "answer": "",
+  "rounds_used": 8,
+  "total_seconds": 15.069713299999421
+}

@@ -1,0 +1,130 @@
+{
+  "question_id": "Q-14",
+  "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_SjXIFk4BjnMOXhCkf2Uw40U9",
+          "name": "lookup",
+          "arguments": {
+            "district": "Tarnvale",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Tarnvale",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Households used 5,207 megalitres of water in 2025.",
+                "source": "NR-03"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00011780000204453245
+        },
+        {
+          "tool_call_id": "call_q2345Fn5XKWzvavUgHNu6gTD",
+          "name": "lookup",
+          "arguments": {
+            "district": "Tarnvale",
+            "field": "population"
+          },
+          "result": {
+            "district": "Tarnvale",
+            "field": "population",
+            "matches": [
+              {
+                "text": "Tarnvale lies on the Tarn and was founded in 1854. The 2025 census counted 71,388 residents, up from 67,214 at the 2020 census, on an area of 2,106.9 square kilometres",
+                "source": "NR-03"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 7.509999704780057e-05
+        },
+        {
+          "tool_call_id": "call_IpVvy3dDK2zznDu4NKyZg2wg",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ashgrove",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Ashgrove",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 4,390 megalitres",
+                "source": "NR-10"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 7.15000023774337e-05
+        },
+        {
+          "tool_call_id": "call_pnnJzL8sE6uwiPBPHyBuPYAz",
+          "name": "lookup",
+          "arguments": {
+            "district": "Ashgrove",
+            "field": "population"
+          },
+          "result": {
+            "district": "Ashgrove",
+            "field": "population",
+            "matches": [
+              {
+                "text": "There are 24 schools in the district, attended by 8,837 pupils in 2025/26. The 2025 census recorded 58,760 residents; the 2020 census had recorded 56,041. The district's paved road network is 733.9 km long",
+                "source": "NR-10"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.800000119255856e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_33NFf2OfP3BZYlw7l7wgS03Z",
+          "name": "calculate",
+          "arguments": {
+            "expression": "5207*1000000/(71388*365)"
+          },
+          "result": {
+            "result": 199.8340536877001
+          },
+          "seconds": 0.00011369999992894009
+        },
+        {
+          "tool_call_id": "call_AOhSOfD613qYIX4qonLikgUj",
+          "name": "calculate",
+          "arguments": {
+            "expression": "4390*1000000/(58760*365)"
+          },
+          "result": {
+            "result": 204.68681518505738
+          },
+          "seconds": 4.609999814420007e-05
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [],
+      "final_answer": "Ashgrove | 4.85276149735728"
+    }
+  ],
+  "input_tokens": 2231,
+  "output_tokens": 179,
+  "unanswered": false,
+  "answer": "Ashgrove | 4.85276149735728",
+  "rounds_used": 3,
+  "total_seconds": 6.23342269999921
+}

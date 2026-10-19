@@ -1,0 +1,115 @@
+{
+  "question_id": "Q-03",
+  "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_26VzSzyHKywgBL8z6vUUDC3p",
+          "name": "lookup",
+          "arguments": {
+            "district": "Lindenmoor",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Lindenmoor",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Census population: 27,736 in 2020 and 29,051 in 2025. Households used 2,151,400 cubic metres of water during 2025, and the district's 2025 budget amounted to 4,870.4 million tenge",
+                "source": "NR-08"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00012000000015177648
+        },
+        {
+          "tool_call_id": "call_FRHuq1GHRL8mmX5YOistFXxx",
+          "name": "lookup",
+          "arguments": {
+            "district": "Kelmarsh",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Kelmarsh",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 1,739 megalitres",
+                "source": "NR-04"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 2.9199999971751822e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_flof3jag8YFCdCZG8hTCflO7",
+          "name": "calculate",
+          "arguments": {
+            "expression": "2151400*1000/29051/365"
+          },
+          "result": {
+            "result": 202.89306995774555
+          },
+          "seconds": 9.550000004310277e-05
+        },
+        {
+          "tool_call_id": "call_1amrNEYj1Jcu1lxNN1pKj2Oe",
+          "name": "lookup",
+          "arguments": {
+            "district": "Kelmarsh",
+            "field": "population"
+          },
+          "result": {
+            "district": "Kelmarsh",
+            "field": "population",
+            "matches": [
+              {
+                "text": "There are 11 schools in the district, attended by 3,268 pupils in 2025/26. The 2025 census recorded 24,117 residents; the 2020 census had recorded 22,845. The district's paved road network is 271.5 km long",
+                "source": "NR-04"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00013330000001587905
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_RY6jSCcCVl3HtEqHwAgUAg5C",
+          "name": "calculate",
+          "arguments": {
+            "expression": "1739*1000*1000/24117/365"
+          },
+          "result": {
+            "result": 197.55291129260834
+          },
+          "seconds": 4.489999992074445e-05
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "tool_calls": [],
+      "final_answer": "Lindenmoor used more water, by 5.34015866513721 litres per resident per day.\n\nANSWER: Lindenmoor | 5.34015866513721"
+    }
+  ],
+  "input_tokens": 2840,
+  "output_tokens": 186,
+  "unanswered": false,
+  "answer": "Lindenmoor used more water, by 5.34015866513721 litres per resident per day.\n\nANSWER: Lindenmoor | 5.34015866513721",
+  "rounds_used": 4,
+  "total_seconds": 5.647969300000113
+}

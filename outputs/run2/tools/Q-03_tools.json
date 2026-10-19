@@ -1,0 +1,146 @@
+{
+  "question_id": "Q-03",
+  "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_4TqgNZ9cPbS7avs8QhDdDxjC",
+          "name": "lookup",
+          "arguments": {
+            "district": "Lindenmoor",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Lindenmoor",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Census population: 27,736 in 2020 and 29,051 in 2025. Households used 2,151,400 cubic metres of water during 2025, and the district's 2025 budget amounted to 4,870.4 million tenge",
+                "source": "NR-08"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00025300000015704427
+        },
+        {
+          "tool_call_id": "call_XOkZCIR9qkRcUKipjDNIRN3w",
+          "name": "lookup",
+          "arguments": {
+            "district": "Lindenmoor",
+            "field": "population"
+          },
+          "result": {
+            "district": "Lindenmoor",
+            "field": "population",
+            "matches": [
+              {
+                "text": "Census population: 27,736 in 2020 and 29,051 in 2025. Households used 2,151,400 cubic metres of water during 2025, and the district's 2025 budget amounted to 4,870.4 million tenge",
+                "source": "NR-08"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 0.00010010000005422626
+        },
+        {
+          "tool_call_id": "call_Ptc1cuW8nUOzVjcQvg8SSOqV",
+          "name": "lookup",
+          "arguments": {
+            "district": "Kelmarsh",
+            "field": "water use"
+          },
+          "result": {
+            "district": "Kelmarsh",
+            "field": "water use",
+            "matches": [
+              {
+                "text": "Household water use in 2025 came to 1,739 megalitres",
+                "source": "NR-04"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 6.53000006423099e-05
+        },
+        {
+          "tool_call_id": "call_dEwvuiEuV2volLeWGtBTk1Cs",
+          "name": "lookup",
+          "arguments": {
+            "district": "Kelmarsh",
+            "field": "population"
+          },
+          "result": {
+            "district": "Kelmarsh",
+            "field": "population",
+            "matches": [
+              {
+                "text": "There are 11 schools in the district, attended by 3,268 pupils in 2025/26. The 2025 census recorded 24,117 residents; the 2020 census had recorded 22,845. The district's paved road network is 271.5 km long",
+                "source": "NR-04"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 5.290000081004109e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_WCMRhjXXyjQBhXkbtmYFMSD8",
+          "name": "calculate",
+          "arguments": {
+            "expression": "2151400 * 1000 / 29051 / 365"
+          },
+          "result": {
+            "result": 202.89306995774555
+          },
+          "seconds": 0.000753199999962817
+        },
+        {
+          "tool_call_id": "call_K5XCW9y8XcSMlRpHqA80rYbF",
+          "name": "calculate",
+          "arguments": {
+            "expression": "1739 * 1000000 / 24117 / 365"
+          },
+          "result": {
+            "result": 197.55291129260834
+          },
+          "seconds": 0.00010790000123961363
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_FjLHMGxB8avFpDpeGoGYy8BO",
+          "name": "calculate",
+          "arguments": {
+            "expression": "202.89306995774555 - 197.55291129260834"
+          },
+          "result": {
+            "result": 5.34015866513721
+          },
+          "seconds": 0.00014480000027106144
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "tool_calls": [],
+      "final_answer": "Lindenmoor used more water, by 5.34 litres per resident per day.\n\nANSWER: Lindenmoor | 5.34"
+    }
+  ],
+  "input_tokens": 3390,
+  "output_tokens": 229,
+  "unanswered": false,
+  "answer": "Lindenmoor used more water, by 5.34 litres per resident per day.\n\nANSWER: Lindenmoor | 5.34",
+  "rounds_used": 4,
+  "total_seconds": 6.575953599998684
+}

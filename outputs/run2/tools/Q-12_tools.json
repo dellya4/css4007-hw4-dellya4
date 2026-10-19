@@ -1,0 +1,130 @@
+{
+  "question_id": "Q-12",
+  "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+  "round_limit": 8,
+  "rounds": [
+    {
+      "round": 1,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_XuKsRPpfNHfBMqPq29yVCP4I",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "budget"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "budget",
+            "matches": [
+              {
+                "text": "Its budget for 2025 was set at 16,021.7 million tenge",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 5.020000025979243e-05
+        },
+        {
+          "tool_call_id": "call_s6XNEjlcrSX7h0vroXELLlqW",
+          "name": "lookup",
+          "arguments": {
+            "district": "Harrowfield",
+            "field": "pupils"
+          },
+          "result": {
+            "district": "Harrowfield",
+            "field": "pupils",
+            "matches": [
+              {
+                "text": "There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 residents; the 2020 census had recorded 83,609. The district's paved road network is 1,037.2 km long",
+                "source": "NR-07"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 2.7300000510876998e-05
+        },
+        {
+          "tool_call_id": "call_3lhPMhDJNnlXafRmCqfpH2M1",
+          "name": "lookup",
+          "arguments": {
+            "district": "Tarnvale",
+            "field": "budget"
+          },
+          "result": {
+            "district": "Tarnvale",
+            "field": "budget",
+            "matches": [
+              {
+                "text": "Its 2025 budget was 12,960.3 million tenge, and it maintains 944.7 km of paved road",
+                "source": "NR-03"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 4.7900000936351717e-05
+        },
+        {
+          "tool_call_id": "call_B71iL38yjsw9I9UHc6qs2yt5",
+          "name": "lookup",
+          "arguments": {
+            "district": "Tarnvale",
+            "field": "pupils"
+          },
+          "result": {
+            "district": "Tarnvale",
+            "field": "pupils",
+            "matches": [
+              {
+                "text": "The district runs 29 schools with 10,652 pupils enrolled in the 2025/26 school year",
+                "source": "NR-03"
+              }
+            ],
+            "corrections": []
+          },
+          "seconds": 2.3699998564552516e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "tool_calls": [
+        {
+          "tool_call_id": "call_aciCblobn0zvTzXboP1Izn8C",
+          "name": "calculate",
+          "arguments": {
+            "expression": "16021.7*1000000/13904"
+          },
+          "result": {
+            "result": 1152308.6881472957
+          },
+          "seconds": 0.00010350000229664147
+        },
+        {
+          "tool_call_id": "call_fxxxxHSd2H43pzRhRhwc41my",
+          "name": "calculate",
+          "arguments": {
+            "expression": "12960.3*1000000/10652"
+          },
+          "result": {
+            "result": 1216701.0889973715
+          },
+          "seconds": 3.5799999750452116e-05
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "tool_calls": [],
+      "final_answer": "Tarnvale, by 64.392 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.392"
+    }
+  ],
+  "input_tokens": 2194,
+  "output_tokens": 191,
+  "unanswered": false,
+  "answer": "Tarnvale, by 64.392 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.392",
+  "rounds_used": 3,
+  "total_seconds": 5.4706686999998055
+}
